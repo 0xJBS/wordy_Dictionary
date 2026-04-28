@@ -1,3 +1,8 @@
+
+
+
+
+
 // Select elements
 const form = document.getElementById("search-form");
 const input = document.getElementById("word-input");
@@ -10,7 +15,7 @@ const exampleEl = document.getElementById("example");
 const synonymsEl = document.getElementById("synonyms");
 const audioEl = document.getElementById("audio");
 
-// Simple cache (prevents repeated API calls for same words)
+// Simple cache to prevent repeated API calls for same words
 const validWordCache = {};
 
 // Event listener
@@ -39,7 +44,7 @@ function fetchWord(word) {
       return response.json();
     })
     .then(data => {
-      // Validate structure before using it
+     
       if (
         !data ||
         !data[0] ||
@@ -120,8 +125,7 @@ function displayResult(data) {
   definitionEl.textContent = definition.definition;
   exampleEl.textContent = definition.example || "No example available";
 
-  // Synonyms (safe fallback)
-  const synonyms =
+  // Synonyms 
     meaning.synonyms ||
     definition.synonyms ||
     [];
@@ -145,7 +149,7 @@ function displayResult(data) {
   }
 }
 
-// Error handling (DO NOT clear previous results)
+// Error handling 
 function showError(message) {
   errorMessage.textContent = message;
 }
