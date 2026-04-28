@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wordly Dictionary</title>
+  <link rel="stylesheet" href="wordy.css">
+</head>
+<body>
+
+  <h1>Wordly Dictionary</h1>
+
+  <form id="search-form">
+    <input type="text" id="word-input" placeholder="Enter a word..." required />
+    <button type="submit">Search</button>
+  </form>
+
+  <div id="error-message"></div>
+
+  <div id="result">
+    <h2 id="word"></h2>
+    <p id="phonetic"></p>
+    <audio id="audio" controls></audio>
+
+    <h3>Definition:</h3>
+    <p id="definition"></p>
+
+    <h3>Example:</h3>
+    <p id="example"></p>
+
+    <h3>Synonyms:</h3>
+    <p id="synonyms"></p>
+  </div>
+
+  <script src="wordy.js" defer></script>
+</body>
+</html>
