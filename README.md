@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Wordly Dictionary SPA
 
 ## Project Overview
@@ -159,3 +160,5 @@ This project demonstrates how to build a responsive and interactive web applicat
 ## Repository
 
 https://github.com/0xJBS/wordy_Dictionary.git
+=======
+# wordy_Dictionary
